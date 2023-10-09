@@ -2,26 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital,wght@0,400;0,700;1,400&family=Mirza:wght@400;500;600;700&family=Passions+Conflict&family=Purple+Purse&display=swap');
+
+/* font-family: 'Cardo',serif;
+font-family: 'Mirza',serif;
+font-family: 'Passions Conflict',cursive;
+font-family: 'Purple Purse',cursive; */
+
+.font-mirza {
+    font-family: 'Mirza', serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.font-passion {
+    font-family: 'Passions Conflict', cursive;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.font-cardo {
+    font-family: 'Cardo', serif;
+}
+
+.font-purple {
+    font-family: 'Purple Purse', cursive;
 }
